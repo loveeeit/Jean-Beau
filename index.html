@@ -1,22 +1,351 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<!-- Jean Beau's beautiful website -->
+<html>
+<title>Jean Beau's</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="images/you.png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>DOMOV</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>O NAS</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PROJEKTI</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>KONTAKT</p>
+  </a>
+</nav>
 
-		<title>Jean-Beau</title>
-	</head>
-	<body>
-		<h1>Jean-Beau</h1>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">DOMOV</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">O NAS</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PROJEKTI</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">KONTAKT</a>
+  </div>
+</div>
 
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	</body>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small"> </span>Imaš svojega designerja?</h1>
+    <p>Ustvarjamo izstopajočo vsebino in jo z grafičnim oblikovanjem ustrezno izrazimo.</p>
+    <img src="images/oz.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Jean Beau</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Jean Beau = JEAN: JE - Jenko AN - Anja; Beau: Fr = partner; BEAUtiful = lepo; <br>
+		Jean Beau iz vsakega produkta, storitve ali dejavnosti privleče na plan tisto nekaj kaj dela to različno od ostalih, kaj je unikatno. Polna zaloga idej, ki skupaj potem ustvari nekaj ob katerem ostaneš brez besed. 
+		Najdite svojega partnerja, ki bo iz vas potegnil vašo ustvarjalnost ter vas popelje v svet estetike. V Jeanu se skrivajo leta izkušenj, ki vam bodo pomagala do popolne izpeljave vaših projektov, ki se bodo ponašali z umetniškim pridihom.
+      Ste kdaj razmišljali o spletni strani kot umetnosti. Ste kdaj razmišljali da je design tisti, ki pri kupcu podzavestno sproži instinkt po nakupni želji. Morda je prav JEAN BEAU tisti pravi naslov <em> za uresničitev vaših projektov, ki bodo zažareli v luči unikatnosti in lepote. </em>
+    </p>
+	<p>
+		<ul>
+			<li> 
+				Oblikovanje CELOSTNE GRAFIČNE PODOBE PODJETJA
+			</li>
+			<li> 
+				Oblikovanje PROMOCIJSKEGA/REKLAMNEGA MATERIALA
+			</li>
+			<li> 
+				Fotografija produktov & hrane
+			</li>
+			<li> 
+				Pomoč podjetjem pri REBRANDINGU
+			</li>
+			<li> 
+				Oblikovanje in postavitev SPLETNE STRANI
+			</li>
+			<li> 
+				Postavitev in urejanje SOCIALNIH OMREŽIJ
+			</li>
+		</ul>
+	</p>
+    <h3 class="w3-padding-16 w3-text-light-grey">Storitve</h3>
+    <p class="w3-wide">Ustvarjanje vsebine, domišlija brez meja</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Grafično oblikovanje, web & print design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Fotografija</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Partnerji
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Končani projekti
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Zadovoljne stranke
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">2000+</span><br>
+        Skodelic kave 
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Cenik
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">Cenik</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic Jean Beau</li>
+          <li class="w3-padding-16">Osnovni Design</li>
+          <li class="w3-padding-16">Fotografija</li>
+          <li class="w3-padding-16">Vsebina</li>
+          <li class="w3-padding-16">Ureditev socialnih omrežij</li>
+          <li class="w3-padding-16">
+            <h2>€ 500</h2>
+            <span class="w3-opacity">na projekt</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Naroči</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Lux Jean Beau</li>
+          <li class="w3-padding-16">Osnovni design</li>
+          <li class="w3-padding-16">Fotografija</li>
+          <li class="w3-padding-16">Vsebina</li>
+          <li class="w3-padding-16">Luksuzne vizitke</li>
+		  <li class="w3-padding-16">Spletna stran</li>
+		  <li class="w3-padding-16">Socialna omrežja</li>
+          <li class="w3-padding-16">
+            <h2>€ 1200</h2>
+            <span class="w3-opacity">na projekt</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Naroči</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">Mnenja zadovoljnih strank</h3>  
+    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Rudi Roudi</span>Handmade knives by RR</p>
+    <p>Najboljši oster design, svaka čast. </p><br>
+    
+    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Nik Kavcic</span>Gostilnica in pivnica Vic</p>
+    <p>Daleč najboljši, najhitrejši in profesionalni.</p>
+	
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Project Section -->
+    <div class="w3-container w3-padding-32" id="projects">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Stranke</h3>
+    </div>
+
+    <div class="w3-row-padding">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Acapulco</div>
+          <img src="images/acapulco.jpg" alt="House" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Handmade knives by RR</div>
+          <img src="images/rrnozi1.jpg" alt="House" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Crystal Skybar</div>
+          <img src="images/st-crystal.jpg" alt="House" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Cajhen</div>
+          <img src="images/st-cajhen.png" alt="House" style="width:100%">
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row-padding">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Gostilna Rožnik</div>
+          <img src="images/solata.jpg" alt="House" style="width:99%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Pivnica Vič</div>
+          <img src="images/st-pivnica.jpg" alt="House" style="width:99%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Wild Brothers</div>
+          <img src="images/st-wild.png" alt="House" style="width:99%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Pajk Klobuki</div>
+          <img src="images/st-pajk.jpg" alt="House" style="width:99%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Alpegel</div>
+          <img src="images/st-alpegel.jpg" alt="House" style="width:99%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Flamula</div>
+          <img src="images/st-flamula.jpg" alt="House" style="width:99%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Mangas</div>
+          <img src="images/st-mangas.jpg" alt="House" style="width:99%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Kunk</div>
+          <img src="images/st-kunk.jpg" alt="House" style="width:99%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Pasja Lepotilnica</div>
+          <img src="images/st-pasja.jpg" alt="House" style="width:99%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">BP Taste</div>
+          <img src="images/st-bp.jpg" alt="House" style="width:99%">
+        </div>
+      </div>
+    </div>
+	
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Projekti</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="images/slike-crystal.jpg" style="width:100%">
+        <img src="images/kunk.jpg" style="width:100%">
+        <img src="images/burger.jpg" style="width:100%">
+		<img src="images/st-alpegel.jpg" style="width:100%">
+		<img src="images/slika1.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="images/aca.jpg" style="width:100%">
+        <img src="images/aca1.jpg" style="width:100%">
+        <img src="images/meni.png" style="width:100%">
+	    <img src="images/slika2.jpg" style="width:100%">
+		<img src="images/slika3.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+  
+  <p> Za več vsebin, obiščite naš instagram profil @jeanbeau_design</p>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Kontaktirajte nas</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Ljubljana, SLO</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Telefon: +386 40 303 404</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: info@jeanbeau.art</p>
+    </div><br>
+    <p>Pošljite povpraševanje:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Ime" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Tema sporočila" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Sporočilo" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> POŠLJI SPOROČILO
+        </button>
+      </p>
+    </form>
+	
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Jean Beau™ ©2020 </a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
 </html>
+
